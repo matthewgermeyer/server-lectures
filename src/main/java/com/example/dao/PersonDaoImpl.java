@@ -49,6 +49,11 @@ public class PersonDaoImpl implements PersonDao {
             person.setDob(rs.getDate("dob").toLocalDate());
             return person;
         }
-
+    }
+    @Override
+    public void add(List<Person> persons) {
+        for (Person person : persons) {
+            this.add(person);
+        }
     }
 }

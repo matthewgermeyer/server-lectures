@@ -6,5 +6,10 @@ import java.util.List;
 
 public interface PersonDao {
     void add(Person person);
+
     List<Person> find();
+
+    void add(List<Person> persons);
 }
+
+
